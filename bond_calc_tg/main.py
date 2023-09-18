@@ -1,12 +1,12 @@
 import random
-
+from config import bot_token
 import telebot
 from telebot import types
 
 import logging
 
 #Токен бота
-bot = telebot.TeleBot('6426652110:AAEhnkXDCFDmcj905H0L8oUqcSdjWvXW4yk')
+bot = telebot.TeleBot(bot_token)
 #Для проверки бота когда ставишь на хост
 logging.basicConfig(format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s', level = logging.INFO)
 logging.info("Starting bot")
